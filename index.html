@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="styles/reset.css" />
+    
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <script src="script/jquery-3.3.1.min.js"></script>
+  
+    <link rel="stylesheet" href="styles/portfolio.jquery-ui.min.css">
+    <script src="script/jquery-ui.min.js"></script>
+ 
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+            <h1>Rheo V Tan</h1>
+            <h3>portfolio</h3>
+    </header>
+        <div id="sanfrancisco">
+              <h5>San Francisco, CA, United States</h5>
+              <h5>Date: <span id="date"></span></h5>
+              <h5>Time: <span id="time"></span></h5>
+        </div>
+    <div class="nav">
+        <a href="#about">about</a>
+        <a href="#wowslider-container1">Software Integration</a>
+        <a href="#lightbox">Lightbox Gallery</a>
+    </div>
+    
+    <div id="lightbox">
+        <h2>photo-gallery</h2>
+        <ul id="lightbox">
+            <li>
+                <a href="images/Dance.png"><img src="images/Dance.png" /></a>
+            </li>
+            <br>
+            <li>
+                <a href="images/DancerBarrellTurn.jpeg"><img src="images/DancerBarrellTurn.jpeg" /></a>
+            </li>
+            <li>
+                <a href="images/DancerDuet.png"><img src="images/DancerDuet.png" /></a>
+            </li>
+            <li>
+                <a href="images/male-dancer.jpg"><img src="images/male-dancer.jpg" /></a>
+            </li>
+        </ul>
+    </div>
+
+        <div id="tooltip">
+            <div class="tooltip1">
+                <h2>Tooltip</h2>
+            </div>
+            <a href="#tooltip-img">
+                <img src="images/myInnercore.jpg" id="tooltip-img" title="Everything happens for a reason" />
+            </a> 
+    </div>
+    <script>
+        /*global $ */
+        var dt = new Date();
+    document.getElementById("date").innerHTML = dt.toLocaleDateString();
+
+    var dt = new Date();
+    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+    
+    $( document ).ready( function() {
+//   lightbox       
+        var $overLay = $("<div id='overlay'></div>");
+
+        $("body").append($overLay);
+
+        var $image = $("<img>");
+
+        $overLay.append($image);
+
+        var $close = $("<img id='closeImage'>");
+
+        $overLay.append($close);
+
+        $("#lightbox a").click(function(event) {
+            event.preventDefault();
+
+            var imageSource = $(this).attr("href");
+            $image.attr("src", imageSource);
+            $close.attr("src", "images/close-icon.png");
+
+            $overLay.show();
+        });
+
+        $("#closeImage").click(function() {
+            $overLay.hide();
+        });
+        
+//      Tooltip
+        // $( document ).tooltip({
+    //   items: "img, [data-geo], [title]",
+    //   content: function() {
+    //     var element = $( this );
+    //     if ( element.is( "[data-geo]" ) ) {
+    //       var text = element.text();
+    //       return "<img class='map' alt='" + text +
+    //         "' src='http://maps.google.com/maps/api/staticmap?" +
+    //         "zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
+    //         text + "'>";
+    //     }
+    //     if ( element.is( "[title]" ) ) {
+    //       return element.attr( "title" );
+    //     }
+    //     if ( element.is( "img" ) ) {
+    //       return element.attr( "alt" );
+    //     }
+    //   }
+        // });
+        $( "#tooltip-img" ).tooltip({
+        
+            show: {
+                    effect: "slideDown",
+                    delay: 300
+                   },
+            position: {
+                    my: "middle top",
+                    at: "middle",
+                    
+                        }, 
+         hide: {
+                effect: "explode",
+                delay: 150
+                }
+        });
+  });
+    </script>
+</body>
+
+</html>
