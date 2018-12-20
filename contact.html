@@ -7,7 +7,7 @@
     <!--<meta name="description" content="Portfolio" />-->
     <!--<meta name="author" content="Rheo V Tan" />-->
     <!--favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.gif">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
@@ -41,23 +41,30 @@
     <section>
         <nav>
             <ul>
-                <li id="contact">
-                    <h1>Contact info</h1>
-                    <p>Send me feedback/suggestion/question</p>
+                <!--<li><a href="#about">Developer</a></li>-->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#"><img src="images/myInnercore.jpg" /></a></li>
+                <li id="contact"><h1>Contact info</h1><br>
+                    <p>Send me feedback/suggestion/question</p><br> 
                     <a href="mailto:rheo.tan@gmail.com?subject=Mail from your portfolio">rheo.tan@gmail.com</a>
-                </li>
-                <li><a class="lightbox-img tooltip-img" href="images/myInnercore.jpg" title="Spiritual Being"><img src="images/myInnercore.jpg" /></a></li>
-                <li id="education" class="tooltip-img">
-                    <h4>Education</h4>
-                    <a href="images/lightbotcertificate.jpg" title="The hour of Code"><img src="images/lightbotcertificate.png" /></a>
-                    <a href="MEDAlogo.png" title="Mission Economic Development Agency (MEDA)"><img src="MEDAlogo2.gif" /></a>
-                    <a href="teamtreehouselogo.png" title="treehouse"><img src="treehouse.gif" /></a>
                 </li>
             </ul>
         </nav>
 
         <article>
-            <h2><a>Projects</a></h2>
+             
+            <!--<div id="developer">-->
+            <!--<ul class="cards-split">-->
+            <!--    <li class="title">-->
+            <!--        <h6>Click the photo</h6>-->
+            <!--    </li>-->
+            <!--    <li class="card card1"><img title="Stanford Hospital & Clinics'12" src="images/stanford.jpg" /></li>-->
+            <!--    <li class="card card2"><img title="MiuMiu - my fav sunglasses" src="images/miumiu.jpg" /></li>-->
+            <!--    <li class="card card3"><img title="A nice guy" src="images/smile.jpg" /></li>-->
+            <!--    <li class="card card4"><img title="Relaxing and Thinking" src="images/laydown.jpg" /></li>-->
+            <!--    <li class="card card5"><img title="What's Up!!" src="images/glasses.jpg" /></li>-->
+            <!--    <li class="card card6"><img title="I love traveling" src="images/airport.jpg" /></li>-->
+            <!--</ul>-->
             <ul id="rheophotos" class="cards-split">
                 <li class="title">
                     <h4 title="inspired by Chris Hutchinson@codepen">Developer Photo Cards</h4>
@@ -92,57 +99,49 @@
                 </li>
             </ul>
 
-            <div id="accordion" class="projects">
-                <h2><a href="#" title="A pop up display overlay the original image for zoom optimization">Lightbox</a></h2>
+            <!--</div>-->
+            <!--<div id="developer2">-->
+            <!--    <p> Hey There, my name is Rheo Tan. I have been blessed for living and learning from many incredible experiences, grown up in many cities; engaging with many. Those all together shaped me of who I am right now.</p>-->
+            <!--    <p> , specifically: JavaScript, jQuery, NodeJs, HTML, CSS, Cloud9, and many more.</p>-->
+            <!--    <p> Check out my projects below as a display of my recent learnings, I hope you'll enjoy them as much as I enjoy creating them.</p>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <div class="projects">
                 <div id="lightbox">
+                    <h2><a href="images/Dance.png" title="A pop up display overlay the original image for zoom optimization">Lightbox</a></h2>
                     <p>It is an overlay on top of the image search result pages that gives you a closer look at a selected image. Lightboxes are also used to place the photo you are interested in above a solid background, often black, to enhance the features
                         of the particular image and filter out what other images may take away.</p>
-                    <ul>
+                    <ul id="lightbox">
                         <li>
-                            <a href="images/splitup.jpg"><img src="images/splitup.jpg" /></a>
+                            <a href="images/splitup.jpg" title="Click on me"><img src="images/splitup.jpg" /></a>
                         </li>
                         <li>
-                            <a href="images/DancerBarrellTurn.jpeg"><img src="images/DancerBarrellTurn.jpeg" /></a>
+                            <a href="images/DancerBarrellTurn.jpeg" title="Click on me"><img src="images/DancerBarrellTurn.jpeg" /></a>
                         </li>
                         <li>
-                            <a href="images/DancerDuet.png"><img src="images/DancerDuet.png" /></a>
+                            <a href="images/DancerDuet.png" title="Click on me"><img src="images/DancerDuet.png" /></a>
                         </li>
                         <li>
-                            <a href="images/handstand.jpg"><img src="images/handstand.jpg" /></a>
+                            <a href="images/handstand.jpg" title="Click on me"><img src="images/handstand.jpg" /></a>
                         </li>
                         <li>
-                            <a href="images/idohiphop.jpg"><img src="images/idohiphop.jpg" /></a>
+                            <a href="images/idohiphop.jpg" title="Click on me"><img src="images/idohiphop.jpg" /></a>
                         </li>
                     </ul>
                 </div>
 
-                <h2><a href="#" title="A pop-up title">Tooltip</a></h2>
+                <br>
                 <div id="tooltip">
-                    <p>The tooltip is a common graphical user interface element. It is used in conjunction with a cursor, usually a mouse pointer. The user hovers the cursor over an item, without clicking it, and a tooltip may appear — a small “hover box”
-                        with information about the item being hovered over.</p>
-                    <ul>
-                        <li>
-                            <a href="images/MusicDance2.jpg"><img src="images/MusicDance2.jpg" class="tooltip-img" title="Dance your tears away" /></a>
-                        </li>
-                        <li>
-                            <a href="images/MusicDance1.jpg"><img src="images/MusicDance1.jpg" class="tooltip-img" title="I wanna dance with somebody" /></a>
-                        </li>
-                    </ul>
-                </div>
-                <h2><a href="#" title="A collapsible content panels ">Accordion</a></h2>
-                <div id="accordionContent">
-                    <p>Displays collapsible content panels for presenting information in a limited amount of space.<br> For example: The project list is a build-in accordion effect.</p>
-                    
-                    <div id="accordion2">
-                        <h5>Click Me!</h5>
-                        <div>
-                            Example of Accordion
-                        </div>
-                        <h5>Click me too!</h5>
-                        <div>
-                            jQuery UI
-                        </div>
+                    <div class="tooltip">
+                        <h2><a href="#">Tooltip</a></h2>
+                        <p>The tooltip is a common graphical user interface element. It is used in conjunction with a cursor, usually a mouse pointer. The user hovers the cursor over an item, without clicking it, and a tooltip may appear — a small “hover box” with information about the item being hovered over.</p>
                     </div>
+                    <a href="#">
+                        <img src="images/MusicDance2.jpg" class="tooltip-img" title="Dance your tears away" />
+                        <img src="images/Dance.png" class="tooltip-img" title="This is an example of tootltip aniimation" />
+                        <img src="images/MusicDance1.jpg" class="tooltip-img" title="I wanna dance with somebody" />
+                    </a>
                 </div>
             </div>
         </article>
@@ -192,7 +191,7 @@
 
             $overLay.append($close);
 
-            $("#lightbox a, #education a, .lightbox-img").click(function(event) {
+            $("#lightbox a").click(function(event) {
                 event.preventDefault();
 
                 var imageSource = $(this).attr("href");
@@ -242,18 +241,6 @@
                     delay: 150
                 }
             });
-            //Accordion
-
-            $("#accordion").accordion({
-                collapsible: true,
-                active: false
-            });
-
-            $("#accordion2").accordion({
-                collapsible: true,
-                active: false
-            });
-
         });
 
         // Resizable
